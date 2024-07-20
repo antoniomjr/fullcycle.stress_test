@@ -67,8 +67,16 @@ func main() {
 	fmt.Printf("Tempo total gasto: %s\n", totalTimeElapsed)
 	fmt.Printf("Quantidade total de requests: %d\n", *totalRequests)
 	fmt.Printf("Quantidade de requests com status HTTP 200: %d\n", successCount)
-	fmt.Println("Distribuição de outros códigos de status HTTP:")
-	for code, count := range statusCodes {
-		fmt.Printf("HTTP %d: %d\n", code, count)
+
+	// Verifica se existem códigos de status diferentes de 200
+	if len(statusCodes) == 1 && statusCodes[200] == *totalRequests {
+		fmt.Println("Todos os requests foram bem-sucedidos com status HTTP 200.")
+	} else {
+		fmt.Println("Distribuição de outros códigos de status HTTP:")
+		for code, count := range statusCodes {
+			if code != 200 {
+				fmt.Printf("HTTP %d: %d\n", code, count)
+			}
+		}
 	}
 }
