@@ -54,4 +54,5 @@ go build -o loadtester main.go
 ```
 > [!WARNING]
 > Better try other url because google.com is blocking the requests.
-><img width="653" alt="Screenshot 2024-07-10 at 13 53 54" src="https://github.com/user-attachments/assets/e4fb11c7-f704-4901-ad34-4bd6aac394a0">
+><img width="932" alt="Screenshot 2024-07-19 at 22 36 05" src="https://github.com/user-attachments/assets/4a7fdfd2-e1d4-47c7-916a-2ca455d3b4dc">
+
