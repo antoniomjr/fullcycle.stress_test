@@ -52,3 +52,6 @@ go build -o loadtester main.go
 
 ./loadtester --url=http://google.com --requests=1000 --concurrency=10
 ```
+> [!WARNING]
+> Better try other url because google.com is blocking the requests.
+>
