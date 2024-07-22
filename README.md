@@ -43,14 +43,14 @@ To build and run this application, follow these steps:
 This will run the application
 ```bash
 docker build -t loadtester .
-docker run loadtester --url=http://google.com --requests=1000 --concurrency=10
+docker run loadtester --url=http://httpbin.org/anything --requests=10000 --concurrency=600
 ```
 
 #### Running the Go application locally
 ```bash
 go build -o loadtester main.go
 
-./loadtester --url=http://google.com --requests=1000 --concurrency=10
+./loadtester --url=http://httpbin.org/anything --requests=10000 --concurrency=600
 docker run loadtester --url=https://economia.awesomeapi.com.br/json/last/USD-BRL --requests=99900 --concurrency=100
 ```
 > [!WARNING]
