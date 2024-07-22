@@ -54,6 +54,7 @@ go build -o loadtester main.go
 docker run loadtester --url=https://economia.awesomeapi.com.br/json/last/USD-BRL --requests=99900 --concurrency=100
 ```
 > [!WARNING]
-> Better try another url because google.com is blocking the requests.
-><img width="932" alt="Screenshot 2024-07-19 at 22 36 05" src="https://github.com/user-attachments/assets/4a7fdfd2-e1d4-47c7-916a-2ca455d3b4dc">
+> docker run loadtester --url=http://httpbin.org/anything --requests=10000 --concurrency=600
+><img width="675" alt="Screenshot 2024-07-22 at 20 30 28" src="https://github.com/user-attachments/assets/35a27ade-bd00-4f3c-aef4-0e33072126d9">
+
 
