@@ -44,8 +44,8 @@ This will run the application
 ```bash
 docker build -t loadtester .
 docker run loadtester --url=http://httpbin.org/anything --requests=10000 --concurrency=600
-<img width="692" alt="Screenshot 2024-07-22 at 20 31 59" src="https://github.com/user-attachments/assets/45a9d156-127e-46d7-84a8-90478ecb4c91">
 ```
+<img width="692" alt="Screenshot 2024-07-22 at 20 31 59" src="https://github.com/user-attachments/assets/45a9d156-127e-46d7-84a8-90478ecb4c91">
 
 #### Running the Go application locally
 ```bash
